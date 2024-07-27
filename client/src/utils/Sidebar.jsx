@@ -17,7 +17,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     >
       <div className="p-4">
         <div>
-          <img src="../assets/NbHzzi7h_400x400.jpg" alt="" />
+          <img src="https://pbs.twimg.com/profile_images/1276595758934953990/NbHzzi7h_400x400.jpg" alt="" className='rounded-full w-40 p-2' />
         </div>
         <ul className="mt-4">
           <Link to="/home" >
@@ -95,5 +95,4 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     </>
   );
 };
-
 export default Sidebar;
