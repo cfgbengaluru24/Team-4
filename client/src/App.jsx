@@ -19,6 +19,7 @@ import {toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ApproveTrainer from './components/ApproveTrainer';
 import BookTicket from './utils/BookTicket';
+import FeedbackForm from './components/Feedback';
 
 // Set up Axios interceptor
 axios.interceptors.request.use(
