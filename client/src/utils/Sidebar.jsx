@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-import image1 from '../assets/NbHzzi7h_400x400.jpg'
+
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+
   const { user, logout } = useAuth();
+
   return (
     <>
       {
@@ -14,8 +16,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       } transition-transform duration-300 ease-in-out bg-gray-800 text-white w-64 h-screen z-50`}
     >
       <div className="p-4">
+        <div>
+          <img src="../assets/NbHzzi7h_400x400.jpg" alt="" />
+        </div>
         <ul className="mt-4">
-        <img src={image1} alt="image" className='rounded-full w-40 p-2'/>
           <Link to="/home" >
             <div className="py-2 px-4 hover:bg-gray-700 rounded">
               Home
