@@ -33,6 +33,8 @@ app.use('/api/trainee', trainee);
 const book_tickets = require('./routes/book-tickets')
 app.use('/api/book-tickets',book_tickets)
 
+const feedback = require('./routes/feedback');
+app.use('/api/feedback', feedback);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));

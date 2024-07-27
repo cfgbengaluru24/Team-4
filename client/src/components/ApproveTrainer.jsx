@@ -9,11 +9,12 @@ function ApproveTrainer() {
   if (!token) {
     return <Navigate to="/login" />;
   }
-  
+
   const [validatedData, setValidatedData] = useState(data[0].camp1); // Initialize with data from first camp
   const [loading, setLoading] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [selectedRegion, setSelectedRegion] = useState('camp1'); // Default region
+  const [userInput, setUserInput] = useState(''); // State to hold user input
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -25,9 +26,12 @@ function ApproveTrainer() {
     setValidatedData(data.find(camp => Object.keys(camp).includes(selected))[selected]);
   };
 
+  const handleInputChange = (event) => {
+    setUserInput(event.target.value);
+  };
+
   const validateUsers = async () => {
-    const userInput = prompt('Please enter a number:');
-    if (isNaN(userInput) || userInput === null || userInput.trim() === '') {
+    if (isNaN(userInput) || userInput.trim() === '') {
       alert('Invalid input. Please enter a valid number.');
       return;
     }
@@ -42,8 +46,7 @@ function ApproveTrainer() {
       setValidatedData(response.data);
       console.log(validatedData);
     } catch (err) {
-      //use toast
-      // setError('Error validating users');
+      // Handle error, e.g., display a notification
     } finally {
       setLoading(false);
     }
@@ -59,7 +62,7 @@ function ApproveTrainer() {
         >
           ☰
         </button>
-        
+
         <div className="min-h-screen bg-gray-100 p-8">
           <div className="container mx-auto p-4">
             <h1 className="text-2xl font-bold mb-4">Training List</h1>
@@ -74,13 +77,22 @@ function ApproveTrainer() {
               {/* Add more options if there are more regions */}
             </select>
 
-            <button
-              onClick={validateUsers}
-              className="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
-              disabled={loading}
-            >
-              {loading ? 'Validating...' : 'Validate Users'}
-            </button>
+            <div className="mb-4">
+              <input
+                type="text"
+                value={userInput}
+                onChange={handleInputChange}
+                className="px-4 py-2 border rounded"
+                placeholder="Enter a number"
+              />
+              <button
+                onClick={validateUsers}
+                className="ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                disabled={loading}
+              >
+                {loading ? 'Validating...' : 'Validate Users'}
+              </button>
+            </div>
 
             <table className="min-w-full bg-white border border-gray-200">
               <thead>
