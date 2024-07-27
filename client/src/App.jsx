@@ -36,7 +36,6 @@ axios.interceptors.request.use(
 const App = () => (
   <UserProvider>
     <ChatContextProvider>
-
     <Router>
       <Routes>
         <Route path="/register" element={<Register />} />
