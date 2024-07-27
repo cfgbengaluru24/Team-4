@@ -35,35 +35,10 @@ function Profile() {
         <div className="flex-1">
           <UserProfile />
         </div>
-        <div className="flex-1">
+        {/* <div className="flex-1">
           <Visitors />
-        </div>
+        </div> */}
       </div>
-      {/* <div className="mt-4">
-        <HeatmapChart />
-      </div>
-      <div className="mt-4">
-        <AreaChart />
-      </div>
-      <div className="mt-4">
-        <BarChart />
-      </div>
-      <div className="mt-4">
-        <h1>scatter chart</h1>
-        <ScatterChart />
-      </div> */}
-      {/* <div className="mt-4">
-        <h1>donut chart</h1>
-        <DonutChart />
-      </div> */}
-      {/* <div className="mt-4">
-        <h1>pie chart</h1>
-        <PieChart />
-      </div> */}
-      {/* <div className="mt-4">
-        <h1>radar chart</h1>
-        <RadarChart />
-      </div> */}
     </div>
       </div>
     </div>

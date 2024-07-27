@@ -1,0 +1,53 @@
+[
+    {
+      "date": "2024-08-15",
+      "location": "Delhi",
+      "trainers": ["Amit Singh", "Rajesh Kumar", "Anjali Sharma", "Neha Verma"]
+    },
+    {
+      "date": "2024-09-10",
+      "location": "Mumbai",
+      "trainers": ["Vikram Patil", "Sneha Rao", "Pooja Nair", "Arjun Deshmukh"]
+    },
+    {
+      "date": "2024-10-05",
+      "location": "Chennai",
+      "trainers": ["Suresh Reddy", "Ravi Shankar", "Lakshmi Iyer", "Rohan Krishnan"]
+    },
+    {
+      "date": "2024-11-20",
+      "location": "Kolkata",
+      "trainers": ["Sanjay Das", "Rituparna Sen", "Abhishek Banerjee", "Nandini Bose"]
+    },
+    {
+      "date": "2024-12-15",
+      "location": "Bangalore",
+      "trainers": ["Karthik Gowda", "Rashmi Menon", "Vikram Shetty", "Anand Kumar"]
+    },
+    {
+      "date": "2024-08-25",
+      "location": "Hyderabad",
+      "trainers": ["Rakesh Reddy", "Priya Srinivasan", "Manoj Rao", "Deepa Rao"]
+    },
+    {
+      "date": "2024-09-30",
+      "location": "Ahmedabad",
+      "trainers": ["Pranav Shah", "Dhara Patel", "Amitabh Desai", "Jignesh Mehta"]
+    },
+    {
+      "date": "2024-10-25",
+      "location": "Pune",
+      "trainers": ["Nitin Joshi", "Smita Patil", "Ajay Kulkarni", "Rekha Naik"]
+    },
+    {
+      "date": "2024-11-10",
+      "location": "Jaipur",
+      "trainers": ["Manish Gupta", "Anu Sharma", "Rajeev Saini", "Swati Khandelwal"]
+    },
+    {
+      "date": "2024-12-05",
+      "location": "Lucknow",
+      "trainers": ["Vivek Mishra", "Anjali Tiwari", "Amit Tripathi", "Neha Srivastava"]
+    }
+  ]
+  

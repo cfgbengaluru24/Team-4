@@ -30,5 +30,9 @@ app.use('/api/notification', notification);
 const trainee = require('./routes/trainee');
 app.use('/api/trainee', trainee);
 
+const book_tickets = require('./routes/book-tickets')
+app.use('/api/book-tickets',book_tickets)
+
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));

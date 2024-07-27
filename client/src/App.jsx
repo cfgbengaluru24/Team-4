@@ -18,6 +18,7 @@ import { ChatContextProvider } from './context/ChatContext';
 import {toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ApproveTrainer from './components/ApproveTrainer';
+import BookTicket from './utils/BookTicket';
 
 // Set up Axios interceptor
 axios.interceptors.request.use(
@@ -39,6 +40,7 @@ const App = () => (
     <ChatContextProvider>
     <Router>
       <Routes>
+        <Route path="/book-tickets" element={<BookTicket />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<PrivateRoute />}>
@@ -52,6 +54,7 @@ const App = () => (
           <Route path="/chat" element={<Chat />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/home" element={<Home />} />
+         
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
