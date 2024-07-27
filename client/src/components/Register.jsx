@@ -15,6 +15,7 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [userType, setUserType] = useState('');
+  const [gender, setGender] = useState('');
   const [otp, setOtp] = useState('');
   const [showOtpVerification, setShowOtpVerification] = useState(false);
 
@@ -23,7 +24,7 @@ const Register = () => {
         if (!showOtpVerification) {
           await sendOtp(email, password, setShowOtpVerification);
       } else {
-          await register(username, email, password, otp, userType);
+          await register(username, email, password, otp, userType, gender);
       }
   };
 
@@ -78,7 +79,7 @@ const Register = () => {
               onChange={() => setUserType("user")}
               className="form-radio h-4 w-4 text-blue-500 transition duration-300 ease-in-out transform hover:scale-105"
             />
-            <span className="ml-2">User</span>
+            <span className="ml-2">Trainer</span>
           </label>
           <label className="inline-flex items-center ml-6">
             <input
@@ -89,6 +90,29 @@ const Register = () => {
               className="form-radio h-4 w-4 text-blue-500 transition duration-300 ease-in-out transform hover:scale-105"
             />
             <span className="ml-2">Admin</span>
+          </label>
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2">Gender</label>
+          <label className="inline-flex items-center">
+            <input
+              type="radio"
+              required
+              name="gender"
+              onChange={() => setGender("male")}
+              className="form-radio h-4 w-4 text-blue-500 transition duration-300 ease-in-out transform hover:scale-105"
+            />
+            <span className="ml-2">Male</span>
+          </label>
+          <label className="inline-flex items-center ml-6">
+            <input
+              type="radio"
+              required
+              name="gender"
+              onChange={() => setGender("female")}
+              className="form-radio h-4 w-4 text-blue-500 transition duration-300 ease-in-out transform hover:scale-105"
+            />
+            <span className="ml-2">Female</span>
           </label>
         </div>
         {showOtpVerification && (

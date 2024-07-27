@@ -12,10 +12,10 @@ export const useAuth = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  const register = async (username, email, password, otp, userType) => {
+  const register = async (username, email, password, otp, userType, gender) => {
     setLoading(true);
     try {
-      const res = await axios.post(`${import.meta.env.VITE_APP_SERVER_URL}/api/auth/register`, { username, email, password, otp, userType }); 
+      const res = await axios.post(`${import.meta.env.VITE_APP_SERVER_URL}/api/auth/register`, { username, email, password, otp, userType, gender }); 
       const u=res.data;
       await setDoc(doc(db, "userChats", u._id), {});
       toast.success("Registered Successfully");

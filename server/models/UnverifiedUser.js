@@ -22,6 +22,13 @@ const UnverifiedUserSchema = new mongoose.Schema({
     userType: {
         type: String,
         required: true,
+    },
+    camps:{
+        type: Number,
+        default: 0,
+    },
+    gender:{
+        type:String
     }
 },{
     timestamps: true

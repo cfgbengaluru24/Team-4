@@ -22,6 +22,13 @@ const UserSchema = new mongoose.Schema({
     profilepicture:{
         type: String,
         default: "https://freesvg.org/img/abstract-user-flat-4.png",
+    },
+    camps:{
+        type: Number,
+        default: 0,
+    },
+    gender:{
+        type:String
     }
 },{
     timestamps: true

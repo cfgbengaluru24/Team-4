@@ -27,6 +27,8 @@ const query = require('./routes/query');
 app.use('/api/query', query);
 const notification = require('./routes/notification');
 app.use('/api/notification', notification);
+const trainee = require('./routes/trainee');
+app.use('/api/trainee', trainee);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));

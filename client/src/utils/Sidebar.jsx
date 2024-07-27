@@ -65,6 +65,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 Verify
               </div>
             </Link> 
+            <Link to="/approvetrainer" >
+              <div className="py-2 px-4 hover:bg-gray-700 rounded">
+                Approve Trainer
+              </div>
+            </Link> 
             <Link to="/queries" >
               <div className="py-2 px-4 hover:bg-gray-700 rounded">
                 Queries

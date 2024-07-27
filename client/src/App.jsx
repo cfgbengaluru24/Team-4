@@ -17,6 +17,7 @@ import Queries from './components/Queries';
 import { ChatContextProvider } from './context/ChatContext';
 import {toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ApproveTrainer from './components/ApproveTrainer';
 
 // Set up Axios interceptor
 axios.interceptors.request.use(
@@ -42,6 +43,7 @@ const App = () => (
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<PrivateRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/approvetrainer" element={<ApproveTrainer />} />
           <Route path="/verify" element={<Verify/>} />
           <Route path="/raisequery" element={<RaiseQuery/>} />
           <Route path="/queries" element={<Queries/>} />

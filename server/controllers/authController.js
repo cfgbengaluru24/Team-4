@@ -62,7 +62,8 @@ exports.sendOtp = async (req, res) => {
 
 // Register user
 exports.register = async (req, res) => {
-    const { username, email, password, otp, userType } = req.body;
+    const { username, email, password, otp, userType, gender } = req.body;
+    console.log(gender);
     try {
         const otpRecord = await OTP.findOne({ email, otp });
         if (!otpRecord) {
@@ -77,7 +78,8 @@ exports.register = async (req, res) => {
                 username,
                 email,
                 password,
-                userType
+                userType,
+                gender
             });
             const salt = await bcrypt.genSalt(10);
             unverifiedUser.password = await bcrypt.hash(password, salt);
@@ -88,7 +90,8 @@ exports.register = async (req, res) => {
                 username,
                 email,
                 password,
-                userType
+                userType,
+                gender
             });
             const salt = await bcrypt.genSalt(10);
             user.password = await bcrypt.hash(password, salt);

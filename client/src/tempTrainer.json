@@ -1,0 +1,74 @@
+[
+    {
+
+        "camp1":
+        [
+  {"name": "Ishaan", "gender": "female", "location": "Hyderabad", "trainingsTaken": 10, "email": "ishaan@example.com"},
+  {"name": "Saanvi", "gender": "female", "location": "Vijayawada", "trainingsTaken": 10, "email": "saanvi@example.com"},
+  {"name": "Aahana", "gender": "male", "location": "Mumbai", "trainingsTaken": 6, "email": "aahana@example.com"},
+  {"name": "Sai", "gender": "male", "location": "Howrah", "trainingsTaken": 8, "email": "sai@example.com"},
+  {"name": "Aditya", "gender": "male", "location": "Varanasi", "trainingsTaken": 1, "email": "aditya@example.com"},
+  {"name": "Aarav", "gender": "male", "location": "Dhanbad", "trainingsTaken": 5, "email": "aarav@example.com"},
+  {"name": "Sai", "gender": "male", "location": "Guwahati", "trainingsTaken": 4, "email": "sai2@example.com"},
+  {"name": "Anaya", "gender": "female", "location": "Navi Mumbai", "trainingsTaken": 6, "email": "anaya@example.com"},
+  {"name": "Aarav", "gender": "female", "location": "Chennai", "trainingsTaken": 8, "email": "aarav2@example.com"},
+  {"name": "Aditya", "gender": "male", "location": "Surat", "trainingsTaken": 3, "email": "aditya2@example.com"},
+  {"name": "Reyansh", "gender": "female", "location": "Raipur", "trainingsTaken": 10, "email": "reyansh@example.com"},
+  {"name": "Ishaan", "gender": "male", "location": "Dhanbad", "trainingsTaken": 10, "email": "ishaan2@example.com"},
+  {"name": "Kiara", "gender": "male", "location": "Navi Mumbai", "trainingsTaken": 3, "email": "kiara@example.com"},
+  {"name": "Saanvi", "gender": "male", "location": "Kota", "trainingsTaken": 3, "email": "saanvi2@example.com"},
+  {"name": "Ananya", "gender": "female", "location": "Coimbatore", "trainingsTaken": 1, "email": "ananya@example.com"},
+  {"name": "Ayaan", "gender": "male", "location": "Pune", "trainingsTaken": 6, "email": "ayaan@example.com"}
+]
+
+},
+    {
+        "camp2":
+
+        [
+            {"name": "Krishna", "gender": "male", "location": "Nagpur", "trainingsTaken": 9, "email": "krishna@example.com"},
+            {"name": "Vivaan", "gender": "female", "location": "Varanasi", "trainingsTaken": 4, "email": "vivaan@example.com"},
+            {"name": "Sai", "gender": "female", "location": "Gwalior", "trainingsTaken": 0, "email": "sai@example.com"},
+            {"name": "Prisha", "gender": "male", "location": "Patna", "trainingsTaken": 8, "email": "prisha@example.com"},
+            {"name": "Vivaan", "gender": "male", "location": "Hubli-Dharwad", "trainingsTaken": 3, "email": "vivaan2@example.com"},
+            {"name": "Vihaan", "gender": "male", "location": "Pune", "trainingsTaken": 7, "email": "vihaan@example.com"},
+            {"name": "Aarohi", "gender": "female", "location": "Ahmedabad", "trainingsTaken": 6, "email": "aarohi@example.com"},
+            {"name": "Krishna", "gender": "female", "location": "Delhi", "trainingsTaken": 1, "email": "krishna2@example.com"},
+            {"name": "Reyansh", "gender": "male", "location": "Jaipur", "trainingsTaken": 0, "email": "reyansh@example.com"},
+            {"name": "Ishaan", "gender": "male", "location": "Aurangabad", "trainingsTaken": 4, "email": "ishaan@example.com"},
+            {"name": "Aditya", "gender": "female", "location": "Srinagar", "trainingsTaken": 8, "email": "aditya@example.com"},
+            {"name": "Kiara", "gender": "male", "location": "Thane", "trainingsTaken": 6, "email": "kiara@example.com"},
+            {"name": "Vivaan", "gender": "male", "location": "Ghaziabad", "trainingsTaken": 5, "email": "vivaan3@example.com"},
+            {"name": "Aarohi", "gender": "female", "location": "Chandigarh", "trainingsTaken": 7, "email": "aarohi@example.com"},
+            {"name": "Ananya", "gender": "female", "location": "Jodhpur", "trainingsTaken": 8, "email": "ananya@example.com"},
+            {"name": "Vihaan", "gender": "male", "location": "Lucknow", "trainingsTaken": 7, "email": "vihaan@example.com"},
+            {"name": "Krishna", "gender": "male", "location": "Kanpur", "trainingsTaken": 4, "email": "krishna3@example.com"},
+            {"name": "Siya", "gender": "female", "location": "Pune", "trainingsTaken": 4, "email": "siya@example.com"},
+            {"name": "Sai", "gender": "female", "location": "Ludhiana", "trainingsTaken": 5, "email": "sai2@example.com"},
+            {"name": "Prisha", "gender": "male", "location": "Guwahati", "trainingsTaken": 1, "email": "prisha2@example.com"},
+            {"name": "Vivaan", "gender": "female", "location": "Visakhapatnam", "trainingsTaken": 2, "email": "vivaan4@example.com"},
+            {"name": "Krishna", "gender": "male", "location": "Bangalore", "trainingsTaken": 9, "email": "krishna4@example.com"},
+            {"name": "Vihaan", "gender": "female", "location": "Hyderabad", "trainingsTaken": 7, "email": "vihaan2@example.com"},
+            {"name": "Sai", "gender": "female", "location": "Lucknow", "trainingsTaken": 2, "email": "sai3@example.com"},
+            {"name": "Siya", "gender": "female", "location": "Chennai", "trainingsTaken": 8, "email": "siya2@example.com"},
+            {"name": "Aarav", "gender": "female", "location": "Jaipur", "trainingsTaken": 2, "email": "aarav@example.com"},
+            {"name": "Vivaan", "gender": "female", "location": "Navi Mumbai", "trainingsTaken": 6, "email": "vivaan5@example.com"},
+            {"name": "Aadhya", "gender": "female", "location": "Indore", "trainingsTaken": 10, "email": "aadhya@example.com"},
+            {"name": "Vivaan", "gender": "male", "location": "Raipur", "trainingsTaken": 1, "email": "vivaan6@example.com"},
+            {"name": "Ayaan", "gender": "male", "location": "Vadodara", "trainingsTaken": 1, "email": "ayaan@example.com"},
+            {"name": "Ishika", "gender": "female", "location": "Jaipur", "trainingsTaken": 0, "email": "ishika@example.com"},
+            {"name": "Aahana", "gender": "female", "location": "Pimpri-Chinchwad", "trainingsTaken": 2, "email": "aahana@example.com"},
+            {"name": "Anaya", "gender": "female", "location": "Kolkata", "trainingsTaken": 1, "email": "anaya@example.com"},
+            {"name": "Prisha", "gender": "female", "location": "Solapur", "trainingsTaken": 5, "email": "prisha3@example.com"},
+            {"name": "Ayaan", "gender": "female", "location": "Bangalore", "trainingsTaken": 9, "email": "ayaan@example.com"},
+            {"name": "Aahana", "gender": "female", "location": "Vijayawada", "trainingsTaken": 5, "email": "aahana@example.com"},
+            {"name": "Arjun", "gender": "male", "location": "Nagpur", "trainingsTaken": 6, "email": "arjun@example.com"},
+            {"name": "Siya", "gender": "female", "location": "Surat", "trainingsTaken": 5, "email": "siya3@example.com"},
+            {"name": "Anaya", "gender": "female", "location": "Vasai-Virar", "trainingsTaken": 2, "email": "anaya2@example.com"},
+            {"name": "Ayaan", "gender": "male", "location": "Madurai", "trainingsTaken": 2, "email": "ayaan2@example.com"},
+            {"name": "Aarohi", "gender": "female", "location": "Nashik", "trainingsTaken": 6, "email": "aarohi@example.com"},
+            {"name": "Aadhya", "gender": "male", "location": "Dhanbad", "trainingsTaken": 7, "email": "aadhya@example.com"}
+          ]
+          
+    }
+]
