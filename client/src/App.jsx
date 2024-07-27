@@ -20,7 +20,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ApproveTrainer from './components/ApproveTrainer';
 import BookTicket from './utils/BookTicket';
 import FeedbackForm from './components/Feedback';
-
+import CertificatePage from './components/Certificate'
 // Set up Axios interceptor
 axios.interceptors.request.use(
   config => {
@@ -45,6 +45,7 @@ const App = () => (
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/feedback" element={<FeedbackForm />} />
+        <Route path="/certificate" element={<CertificatePage />} />
         <Route path="/" element={<PrivateRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/approvetrainer" element={<ApproveTrainer />} />

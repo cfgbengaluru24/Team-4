@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 const CertificatePage = () => {
   const location = useLocation();
-  const certificateUrl = location.state?.certificateUrl;
+  const certificateUrl = "https://i.pinimg.com/736x/2a/a8/dd/2aa8ddb4ee5d92a0c50d0e2f0ebc14f5.jpg";
 
   if (!certificateUrl) {
     return <div>Certificate URL not provided</div>;

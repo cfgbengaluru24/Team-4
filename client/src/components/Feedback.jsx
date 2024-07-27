@@ -34,7 +34,7 @@ function FeedbackForm() {
     event.preventDefault();
     try {
       const response = await axios.post(`${import.meta.env.VITE_APP_SERVER_URL}/api/feedback`, { userName, centerName, answers });
-      const certificateUrl = response.data.certificateUrl;
+      const certificateUrl = response;
 
       // Navigate to the CertificatePage component
       navigate('/certificate', { state: { certificateUrl } });
