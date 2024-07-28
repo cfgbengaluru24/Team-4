@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 function FeedbackForm() {
   const [userName, setUserName] = useState('');
@@ -9,6 +11,8 @@ function FeedbackForm() {
     question3: '',
     question4: '',
   });
+
+  const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -26,17 +30,17 @@ function FeedbackForm() {
     setCenterName(event.target.value);
   };
 
-  const handleSubmit = async(event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // console.log('User Name:', userName);
-    // console.log('Center Name:', centerName);
-    // console.log('Answers:', answers);
-    try{
-      await axios.post(`${import.meta.env.VITE_APP_SERVER_URL}/api/feedback`, { userName, centerName, answers });
-    }catch(err){
-        console.log(err);
+    try {
+      const response = await axios.post(`${import.meta.env.VITE_APP_SERVER_URL}/api/feedback`, { userName, centerName, answers });
+      const certificateUrl = response;
+
+      // Navigate to the CertificatePage component
+      navigate('/certificate', { state: { certificateUrl } });
+    } catch (err) {
+      console.log(err);
     }
-    // Submit form data to the server or process it as needed
   };
 
   return (
