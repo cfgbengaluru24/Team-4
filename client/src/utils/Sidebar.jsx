@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </Link> 
           {
             
-            user.userType!=='admi' && 
+            user.userType!=='admin' && 
             <>
             <Link to="/raisequery" >
               <div className="py-2 px-4 hover:bg-gray-700 rounded">
