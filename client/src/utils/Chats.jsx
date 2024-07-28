@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../context/UserContext";
 import { ChatContext } from "../context/ChatContext";
 import { db } from "../firebase";
-import roboImg from "../assets/robot.png";
+
 const Chats = () => {
   const [chats, setChats] = useState({});
   const { user } = useContext(UserContext);
@@ -54,7 +54,7 @@ const Chats = () => {
           ))
       ) : (
         <div className="text-center p-6 text-gray-400 ">
-          
+          No Chats !!
         </div>
       )}
     </div>

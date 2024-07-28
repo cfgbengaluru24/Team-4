@@ -1,0 +1,30 @@
+[
+    {
+      "location": "Mumbai",
+      "date": "2024-09-09",
+      "trainers": ["Vikram Patil", "John Doe"],
+      "registration_status": {
+        "accepted": 3,
+        "rejected": 1
+      }
+    },
+    {
+      "location": "Delhi",
+      "date": "2024-10-01",
+      "trainers": ["Jane Smith", "Rahul Kumar"],
+      "registration_status": {
+        "accepted": 4,
+        "rejected": 2
+      }
+    },
+    {
+      "location": "Bangalore",
+      "date": "2024-11-15",
+      "trainers": ["Arjun Reddy", "Priya Singh"],
+      "registration_status": {
+        "accepted": 5,
+        "rejected": 1
+      }
+    }
+    
+  ]

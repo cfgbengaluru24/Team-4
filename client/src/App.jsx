@@ -20,6 +20,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ApproveTrainer from './components/ApproveTrainer';
 import BookTicket from './utils/BookTicket';
 import FeedbackForm from './components/Feedback';
+import PieChart from './utils/PieChart';
 
 // Set up Axios interceptor
 axios.interceptors.request.use(
@@ -56,6 +57,9 @@ const App = () => (
           <Route path="/chat" element={<Chat />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/graphs" element={<PieChart />} />
+
+
          
         </Route>
         <Route path="*" element={<NotFound />} />

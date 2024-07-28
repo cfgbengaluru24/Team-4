@@ -75,6 +75,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 Queries
               </div>
             </Link> 
+            <Link to="/graphs" >
+              <div className="py-2 px-4 hover:bg-gray-700 rounded">
+                statistics
+              </div>
+            </Link> 
             </>
           }  
           
